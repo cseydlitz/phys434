@@ -1,0 +1,9 @@
+It's more probably to roll a total of 7 than rolling snake eyes. 
+If the probability of rolling a single number on one D6 is 1/6, then rolling 
+snake eyes is 1/6*1/6 = 1/36
+Using that fact rolling a seven with any two dice is 1/36, but you have possible 
+combinations of:
+1,6; 2,5; 3,4; 4,3; 5,2; 6,1
+so that's 6/36 = 1/6
+
+Therefore it's more likely that you'll roll a seven than snake eyes (1/6 vs 1/36)
