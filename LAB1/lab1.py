@@ -21,14 +21,13 @@ def probability_z_table_verification(probabilityValues):
 
 def rayleigh_dist():
     fig, ax = plt.subplots(1, 1)
-    mean, var, skew, kurt = stats.rayleigh.stats(moments='mvsk')
     x = np.linspace(stats.rayleigh.ppf(0.01),stats.rayleigh.ppf(0.99), 100)
     ax.plot(x, stats.rayleigh.pdf(x),'r-', lw=5, alpha=0.6, label='rayleigh pdf')
     rv = stats.rayleigh()
     vals = stats.rayleigh.ppf([0.001, 0.5, 0.999])
     r = stats.rayleigh.rvs(size=100000)
     ax.hist(r, density=True, histtype='stepfilled', alpha=0.2)
-    ax.legend(loc='best', frameon=False)
+    ax.legend(loc='best')
     plt.show()
 
 def main():
